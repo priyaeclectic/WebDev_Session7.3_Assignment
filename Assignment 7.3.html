@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title> Assignment 7.3 </title>
+</head>
+<body>
+	<div id="info"></div>
+		<!--Call function myFunction for display-->
+		<input type="button" value="Call function" onclick="myFunction()"><br>
+
+</body>
+<script type="text/javascript">
+	//Anonymous function that displays message
+	var x = function (){
+		document.getElementById("info").innerHTML="Function has been called now";
+	} 
+	//Function that calls the anonymous function via variable x
+	function myFunction()
+	{
+		var z=setTimeout(x,5);			//displays contents of anonymous function after 5 milliseconds
+	}
+</script>
+</html>
